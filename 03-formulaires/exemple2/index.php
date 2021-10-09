@@ -12,7 +12,9 @@
 
 <body>
     <div class="container py-3">
-        <?php if (!empty($_POST)) { ?>
+        <?php # if (!empty($_POST)) { 
+        ?>
+        <?php if (!empty($_POST)) : ?>
             <ul class="list-group">
                 <li class="list-group-item"><?= $_POST['civilite'] ?></li>
                 <li class="list-group-item"><?= $_POST['username'] ?></li>
@@ -20,7 +22,9 @@
                 <li class="list-group-item"><?= $_POST['email'] ?></li>
                 <li class="list-group-item"><?= $_POST['password'] ?></li>
             </ul>
-        <?php } else { ?>
+            <?php # else { 
+            ?>
+        <?php else : ?>
 
             <fieldset>
                 <legend>Formulaire d'inscription</legend>
@@ -59,7 +63,9 @@
 
                 </form>
             </fieldset>
-        <?php } ?>
+            <?php # } 
+            ?>
+        <?php endif; ?>
     </div>
 </body>
 
