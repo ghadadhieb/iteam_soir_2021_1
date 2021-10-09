@@ -1,1 +1,5 @@
-<p>On est le <strong><?php echo date('d/m/Y') ?></strong></p>
+<?php
+function getCurrentDate(string $format): string
+{
+    return date($format);
+}
