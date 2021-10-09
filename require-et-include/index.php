@@ -14,7 +14,7 @@
     <?php require('./date.php') ?>
     <h3>La date d'aujourd'hui</h3>
     <p>On est le <strong><?php echo getCurrentDate('d/m/Y') ?></strong></p>
-    <p>On est le <strong><?php echo getCurrentDate('D d-m-Y') ?></strong></p>
+    <p>On est le <strong><?= getCurrentDate('D d-m-Y') ?></strong></p>
 </body>
 
 </html>
